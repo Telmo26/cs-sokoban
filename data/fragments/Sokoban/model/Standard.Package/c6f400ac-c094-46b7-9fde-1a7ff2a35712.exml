@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sokoban" version="4">
+  <OBJECT>
+    <ID name="sokoban" mc="Standard.Package" uid="c6f400ac-c094-46b7-9fde-1a7ff2a35712"/>
+    <PID name="Sokoban" mc="Standard.Project" uid="b8ece8e0-609a-4e77-974d-d4f45b06b89b"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sokoban]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="0ad05c5d-5ed0-4fd5-b8cd-fd245e59a767"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="entity" mc="Standard.Package" uid="10963240-a758-49ed-baf3-edd51890178a"/>
+        <COMPID name="control" mc="Standard.Package" uid="8e58611e-e19b-401d-bee5-525b0834dda9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

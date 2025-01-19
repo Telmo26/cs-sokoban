@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="control" version="4">
+  <OBJECT>
+    <ID name="control" mc="Standard.Package" uid="8e58611e-e19b-401d-bee5-525b0834dda9"/>
+    <PID name="sokoban" mc="Standard.Package" uid="c6f400ac-c094-46b7-9fde-1a7ff2a35712"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[control]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Controleur" mc="Standard.Class" uid="50c7a659-361e-4f90-a5c2-f4f6e5de0888"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

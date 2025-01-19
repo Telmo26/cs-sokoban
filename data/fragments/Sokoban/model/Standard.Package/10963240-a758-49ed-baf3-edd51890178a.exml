@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="entity" version="4">
+  <OBJECT>
+    <ID name="entity" mc="Standard.Package" uid="10963240-a758-49ed-baf3-edd51890178a"/>
+    <PID name="sokoban" mc="Standard.Package" uid="c6f400ac-c094-46b7-9fde-1a7ff2a35712"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[entity]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <OBJECT>
+          <ID name="Direction" mc="Standard.Enumeration" uid="fe1d8ad9-a5e8-472b-9f23-fcabeb110b36"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Direction]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="GAUCHE" mc="Standard.EnumerationLiteral" uid="48055fb4-89ed-4e3f-843b-f85488e3175c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[GAUCHE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="DROITE" mc="Standard.EnumerationLiteral" uid="e203beff-decb-4036-bc54-bcb69953a2a7"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[DROITE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="HAUT" mc="Standard.EnumerationLiteral" uid="3af7ea6e-cb66-4470-97de-156eb83989aa"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[HAUT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="BAS" mc="Standard.EnumerationLiteral" uid="e54eb6fb-3f67-461b-b5a5-a1d6f3692d65"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[BAS]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="Caisse" mc="Standard.Class" uid="3ab97594-afbc-4344-aef9-57fccc056586"/>
+        <COMPID name="Gardien" mc="Standard.Class" uid="92a2744f-c3a6-4fb0-8110-e7f6307dcc47"/>
+        <COMPID name="Mobile" mc="Standard.Class" uid="379930ca-84d2-4d24-a110-4793a4d391f9"/>
+        <COMPID name="Zone" mc="Standard.Class" uid="7cc074be-3948-4b69-8875-83f29c2eb68c"/>
+        <COMPID name="Place" mc="Standard.Class" uid="2109e161-c3e2-4df0-9f72-3f4e5f4914bd"/>
+        <COMPID name="Mur" mc="Standard.Class" uid="873155c4-af53-4ad7-bbfc-4bc5747bb9d4"/>
+        <COMPID name="Entrepot" mc="Standard.Class" uid="49c1f2a7-bd06-42ac-997b-b7d158e6e432"/>
+        <COMPID name="Position" mc="Standard.Class" uid="02a5e82d-f825-4b4d-a6fa-1d34cc81f39b"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="control Class diagram" mc="Standard.ClassDiagram" uid="9bd0ffab-dddb-48c8-abea-4e3cc7ce7e1d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
