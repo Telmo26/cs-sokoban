@@ -19,7 +19,7 @@
           <ATTRIBUTES>
             <ATT name="IsElementary">true</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsLeaf">true</ATT>
             <ATT name="IsRoot">false</ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="Name"><![CDATA[Direction]]></ATT>
@@ -60,6 +60,9 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="JavaEnumeration" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0262-0000-000000000000"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <COMPID name="Caisse" mc="Standard.Class" uid="3ab97594-afbc-4344-aef9-57fccc056586"/>
@@ -71,6 +74,9 @@
         <COMPID name="Entrepot" mc="Standard.Class" uid="49c1f2a7-bd06-42ac-997b-b7d158e6e432"/>
         <COMPID name="Position" mc="Standard.Class" uid="02a5e82d-f825-4b4d-a6fa-1d34cc81f39b"/>
       </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
       <COMP relation="Product">
         <COMPID name="control Class diagram" mc="Standard.ClassDiagram" uid="9bd0ffab-dddb-48c8-abea-4e3cc7ce7e1d"/>
       </COMP>

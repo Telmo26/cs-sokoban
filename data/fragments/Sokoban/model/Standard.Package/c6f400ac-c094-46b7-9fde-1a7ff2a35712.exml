@@ -14,12 +14,18 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Interaction" mc="Standard.Interaction" uid="0ad05c5d-5ed0-4fd5-b8cd-fd245e59a767"/>
+        <COMPID name="Déplacement à gauche" mc="Standard.Interaction" uid="0ad05c5d-5ed0-4fd5-b8cd-fd245e59a767"/>
+        <COMPID name="Déplacement à droite" mc="Standard.Interaction" uid="d0f6beba-612d-450a-bd61-8c9debdf13a0"/>
+        <COMPID name="Pousser une caisse" mc="Standard.Interaction" uid="14621d8d-7905-4be3-9223-ca2809d92803"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="entity" mc="Standard.Package" uid="10963240-a758-49ed-baf3-edd51890178a"/>
         <COMPID name="control" mc="Standard.Package" uid="8e58611e-e19b-401d-bee5-525b0834dda9"/>
+        <COMPID name="TestSokoban" mc="Standard.Class" uid="73803e6a-1478-4d09-845d-0a927981fae1"/>
       </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>
