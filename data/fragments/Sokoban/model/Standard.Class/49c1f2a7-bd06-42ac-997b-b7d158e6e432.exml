@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="getPlace" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
+          <ID name="getZone" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,7 +25,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[getPlace]]></ATT>
+            <ATT name="Name"><![CDATA[getZone]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -86,7 +86,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="Place" mc="Standard.Class" uid="2109e161-c3e2-4df0-9f72-3f4e5f4914bd"/>
+                    <ID name="Zone" mc="Standard.Class" uid="7cc074be-3948-4b69-8875-83f29c2eb68c"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -109,7 +109,12 @@
               <OBJECT>
                 <ID name="" mc="Infrastructure.Note" uid="5dd06ac9-60db-4a9e-9956-d5c97c4ba19e"/>
                 <ATTRIBUTES>
-                  <ATT name="Content"><![CDATA[// TODO Auto-generated return]]></ATT>
+                  <ATT name="Content"><![CDATA[for (Zone zone : this.zones) {
+    if (zone.getPosition().equals(position)) {
+        return zone;
+    }
+}
+]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -138,7 +143,7 @@
           <DEPENDENCIES>
             <COMP relation="IO">
               <OBJECT>
-                <ID name="places" mc="Standard.Parameter" uid="0ab379c7-5f34-4007-9537-bb551549002e"/>
+                <ID name="zones" mc="Standard.Parameter" uid="0ab379c7-5f34-4007-9537-bb551549002e"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">Inout</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
@@ -150,12 +155,12 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[places]]></ATT>
+                  <ATT name="Name"><![CDATA[zones]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="Place" mc="Standard.Class" uid="2109e161-c3e2-4df0-9f72-3f4e5f4914bd"/>
+                    <ID name="Zone" mc="Standard.Class" uid="7cc074be-3948-4b69-8875-83f29c2eb68c"/>
                   </LINK>
                   <COMP relation="Tag">
                     <OBJECT>
@@ -238,7 +243,7 @@
                 <ID name="" mc="Infrastructure.Note" uid="533af7f8-4526-4e72-8719-40a67fa8a66b"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[super();
-this.places = places;
+this.zones = zones;
 this.positions = positions;
 ]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -457,22 +462,24 @@ this.positions = positions;
                   <ATT name="Content"><![CDATA[String representationEntrepot = new String(); 
 for (int i = 0 ; i < 5 ; i++) {
     for (int j = 0 ; j < 6 ; j++) {
-        Place place = this.places.get(i*6 + j);
-        if (place instanceof Mur) {
+        Zone zone = this.zones.get(i*6 + j);
+        if (zone.isMur())
             representationEntrepot += "#";
-        }
-        else if (place == this.cible) {
-            representationEntrepot += ".";
-        }
-        else if (place instanceof Zone) {
-            Zone zone = (Zone) place;
-            if (zone.getMobile() instanceof Caisse)
-                representationEntrepot += "$";
-            else if (zone.getMobile() instanceof Gardien)
-                representationEntrepot += "@";
+        else if (zone == this.cible) {
+            if (zone.getMobile() instanceof Gardien)
+                representationEntrepot += "+";
+            else if (zone.getMobile() instanceof Caisse)
+                representationEntrepot += "*";
             else 
-                representationEntrepot += " ";
+                representationEntrepot += ".";
         }
+            
+        else if (zone.getMobile() instanceof Caisse)
+                representationEntrepot += "$";
+        else if (zone.getMobile() instanceof Gardien)
+            representationEntrepot += "@";
+        else 
+            representationEntrepot += " ";
     }
     representationEntrepot += "\n";
 }
@@ -493,9 +500,6 @@ for (int i = 0 ; i < 5 ; i++) {
       </COMP>
       <COMP relation="OwnedEnd">
         <REFOBJ>
-          <ID name="places" mc="Standard.AssociationEnd" uid="4cbf4c70-917b-4620-ae4f-93d7bf3e459c"/>
-        </REFOBJ>
-        <REFOBJ>
           <ID name="positions" mc="Standard.AssociationEnd" uid="cc303933-2cda-4e0a-83f5-c4ab317555d8"/>
         </REFOBJ>
         <OBJECT>
@@ -507,7 +511,7 @@ for (int i = 0 ; i < 5 ; i++) {
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Private</ATT>
             <ATT name="IsClass">false</ATT>
@@ -559,7 +563,7 @@ for (int i = 0 ; i < 5 ; i++) {
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="21ebd692-2fec-4758-af53-ffcea31ea6df"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="dfd48809-0a66-4ffc-822a-f2562887cd0f"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -573,6 +577,9 @@ for (int i = 0 ; i < 5 ; i++) {
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="zones" mc="Standard.AssociationEnd" uid="4cbf4c70-917b-4620-ae4f-93d7bf3e459c"/>
+        </REFOBJ>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="JavaClass" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>

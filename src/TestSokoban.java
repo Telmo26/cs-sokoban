@@ -7,48 +7,58 @@ public class TestSokoban {
     @objid ("85298fcc-30ba-4031-a722-4b3bb5720192")
     public static void main(String[] args) {
         ArrayList<Position> positions = new ArrayList<Position>();
-        ArrayList<Place> places = new ArrayList<Place>();
-        Entrepot entrepot = new Entrepot(places, positions);
+        ArrayList<Zone> zones = new ArrayList<Zone>();
+        
+        Entrepot entrepot = new Entrepot(zones, positions);
+        
+        Controleur controleur = new Controleur(entrepot);
         
         for (int i = 0 ; i < 5 ; i++) {
             for (int j = 0 ; j < 6 ; j++) {
                 Position position = new Position(i, j, entrepot);
-                Place place;
+            	Zone zone;
                 
-            	if (i == 0 || j == 0 || i == 4 || j == 5) {
-            		Mur mur = new Mur(entrepot, position);
-            		place = mur;
-            	}
-            	else if (i == 3 && j == 4) {
-            		Zone zoneCible = new Zone(entrepot, position, true);
-            		entrepot.setCible(zoneCible);
-            		place = zoneCible;
-            	}
-            	else if (i == 2 && j == 1) {
-            		Zone zone = new Zone(entrepot, position, false);
-            		Gardien gardien = new Gardien(zone);
-            		zone.setMobile(gardien);
-            		place = zone;
-            	}
-            	else if (i == 2 && j == 3) {
-            		Zone zone = new Zone(entrepot, position, false);
-            		Caisse caisse = new Caisse(zone);
-            		zone.setMobile(caisse);
-            		place = zone;
-            	}
-            	else {
-            		Zone zone = new Zone(entrepot, position, false);
-            		place = zone;
-            	}
-            	
-                position.setPlace(place);
+                if (i == 0 || j == 0 || i == 4 || j == 5) {
+                    zone = new Zone(entrepot, position, false, true);
+                }
+                else if (i == 3 && j == 4) {
+                    zone = new Zone(entrepot, position, true, false);
+                    entrepot.setCible(zone);
+                }
+                else if (i == 2 && j == 1) {
+                    zone = new Zone(entrepot, position, false, false);
+                    Gardien gardien = new Gardien(zone);
+                    zone.setMobile(gardien);
+                    controleur.setGardien(gardien);
+                }
+                else if (i == 2 && j == 3) {
+                    zone = new Zone(entrepot, position, false, false);
+                    Caisse caisse = new Caisse(zone);
+                    zone.setMobile(caisse);
+                }
+                else {
+                    zone = new Zone(entrepot, position, false, false);
+                }
+                position.setZone(zone);
+                
                 
                 positions.add(position);
-                places.add(place);
+                zones.add(zone);
                 
             }
         }
-        System.out.print(entrepot);
+        System.out.println(entrepot);
+        controleur.commande(Direction.DROITE);
+        System.out.println(entrepot);
+        controleur.commande(Direction.DROITE);
+        System.out.println(entrepot);
+        controleur.commande(Direction.HAUT);
+        System.out.println(entrepot);
+        controleur.commande(Direction.DROITE);
+        System.out.println(entrepot);
+        controleur.commande(Direction.BAS);
+        System.out.println(entrepot);
+        
     }
 
 }

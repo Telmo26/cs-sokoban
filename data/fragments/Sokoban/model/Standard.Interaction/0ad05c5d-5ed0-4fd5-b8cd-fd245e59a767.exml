@@ -262,7 +262,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="getPlaceVoisine" mc="Standard.Operation" uid="b7954af0-69a2-4827-8ba6-5370387c9906"/>
+                      <ID name="getZoneVoisine" mc="Standard.Operation" uid="b7954af0-69a2-4827-8ba6-5370387c9906"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -392,7 +392,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="getPlace" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
+                      <ID name="getZone" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -850,11 +850,7 @@
                   <ATT name="Name"><![CDATA[ml2c0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Mur" mc="Standard.Class" uid="873155c4-af53-4ad7-bbfc-4bc5747bb9d4"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="zl2c2" mc="Standard.BindableInstance" uid="0c681789-a4d6-4298-9561-e57aaf1a8cbb"/>
@@ -882,11 +878,7 @@
                   <ATT name="Name"><![CDATA[ml2c0]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Mur" mc="Standard.Class" uid="873155c4-af53-4ad7-bbfc-4bc5747bb9d4"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>

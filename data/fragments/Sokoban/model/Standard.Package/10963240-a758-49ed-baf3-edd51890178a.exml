@@ -69,8 +69,6 @@
         <COMPID name="Gardien" mc="Standard.Class" uid="92a2744f-c3a6-4fb0-8110-e7f6307dcc47"/>
         <COMPID name="Mobile" mc="Standard.Class" uid="379930ca-84d2-4d24-a110-4793a4d391f9"/>
         <COMPID name="Zone" mc="Standard.Class" uid="7cc074be-3948-4b69-8875-83f29c2eb68c"/>
-        <COMPID name="Place" mc="Standard.Class" uid="2109e161-c3e2-4df0-9f72-3f4e5f4914bd"/>
-        <COMPID name="Mur" mc="Standard.Class" uid="873155c4-af53-4ad7-bbfc-4bc5747bb9d4"/>
         <COMPID name="Entrepot" mc="Standard.Class" uid="49c1f2a7-bd06-42ac-997b-b7d158e6e432"/>
         <COMPID name="Position" mc="Standard.Class" uid="02a5e82d-f825-4b4d-a6fa-1d34cc81f39b"/>
       </COMP>

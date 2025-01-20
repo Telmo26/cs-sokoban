@@ -1465,6 +1465,11 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="df129ba9-bdd6-47a1-a695-5649777cb750"/>
                     </REFOBJ>
                   </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="setMobile" mc="Standard.Operation" uid="55b04e7c-5b44-41a4-bccc-6382d0985d44"/>
+                    </REFOBJ>
+                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -1588,6 +1593,11 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7689cfb6-91ee-4823-bd81-dd45dfb8ff4b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="setMobile" mc="Standard.Operation" uid="55b04e7c-5b44-41a4-bccc-6382d0985d44"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

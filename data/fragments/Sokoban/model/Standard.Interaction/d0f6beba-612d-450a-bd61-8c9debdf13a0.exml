@@ -685,6 +685,11 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="78f4e343-30e4-4ae1-9e30-0ce976a2c5a3"/>
                     </REFOBJ>
                   </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="setMobile" mc="Standard.Operation" uid="55b04e7c-5b44-41a4-bccc-6382d0985d44"/>
+                    </REFOBJ>
+                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>

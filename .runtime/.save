@@ -1,9 +1,9 @@
-#Sun Jan 19 20:56:25 CET 2025
+#Mon Jan 20 11:54:44 CET 2025
 org.modelio.app.diagram.editor.OpenedDiagrams0='control Class diagram' {9bd0ffab-dddb-48c8-abea-4e3cc7ce7e1d} Standard.ClassDiagram
 org.modelio.app.diagram.editor.OpenedDiagrams3='Pousser une caisse' {9550abbb-7c88-4f46-9547-6c1fed41fa21} Standard.SequenceDiagram
 org.modelio.app.module.propertytab.GModule\ [id\='JavaDesigner',\ version\='5.4.02',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.app.diagram.editor.OpenedDiagrams1='D\u00E9placement \u00E0 gauche' {40706098-9ab4-4968-a4b4-0b53cc1dd72f} Standard.SequenceDiagram
 org.modelio.app.module.propertytab.GModule\ [id\='JavaDesigner',\ version\='5.4.02',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.app.diagram.editor.OpenedDiagrams2='D\u00E9placement \u00E0 droite' {42f9649c-bfcc-41a4-b2cb-8a152c55b198} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='D\u00E9placement \u00E0 gauche' {40706098-9ab4-4968-a4b4-0b53cc1dd72f} Standard.SequenceDiagram
 org.modelio.app.module.propertytab.GModule\ [id\='JavaDesigner',\ version\='5.4.02',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.diagram.editor.OpenedDiagrams2='D\u00E9placement \u00E0 droite' {42f9649c-bfcc-41a4-b2cb-8a152c55b198} Standard.SequenceDiagram
 org.modelio.app.module.propertytab.GModule\ [id\='JavaDesigner',\ version\='5.4.02',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
