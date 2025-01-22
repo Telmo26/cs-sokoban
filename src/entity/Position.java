@@ -76,4 +76,10 @@ public class Position {
         return "Position [ligne=" + ligne + ", colonne=" + colonne + ", zone=" + zone + "]\n";
     }
 
+    @objid ("c32b4fda-add0-4005-8f3e-7ebf1a094df2")
+    public Position(int ligne, int colonne) {
+        this.colonne = colonne;
+        this.ligne = ligne;
+    }
+
 }
