@@ -21,6 +21,9 @@
       <COMP relation="OwnedElement">
         <COMPID name="entity" mc="Standard.Package" uid="10963240-a758-49ed-baf3-edd51890178a"/>
         <COMPID name="control" mc="Standard.Package" uid="8e58611e-e19b-401d-bee5-525b0834dda9"/>
+        <COMPID name="TestSokoban" mc="Standard.Class" uid="73803e6a-1478-4d09-845d-0a927981fae1"/>
+        <COMPID name="boundary" mc="Standard.Package" uid="fbb99529-eeab-499e-adf7-8851c69e6610"/>
+        <COMPID name="view" mc="Standard.Package" uid="02989bba-36a3-4c99-82ff-f3f8f6758daa"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>

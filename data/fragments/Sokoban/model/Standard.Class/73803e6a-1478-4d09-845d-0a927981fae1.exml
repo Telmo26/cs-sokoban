@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TestSokoban" version="4">
   <OBJECT>
     <ID name="TestSokoban" mc="Standard.Class" uid="73803e6a-1478-4d09-845d-0a927981fae1"/>
-    <PID name="control" mc="Standard.Package" uid="8e58611e-e19b-401d-bee5-525b0834dda9"/>
+    <PID name="sokoban" mc="Standard.Package" uid="c6f400ac-c094-46b7-9fde-1a7ff2a35712"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -102,10 +102,11 @@
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[ArrayList<Position> positions = new ArrayList<Position>();
 ArrayList<Zone> zones = new ArrayList<Zone>();
+ArrayList<Zone> cibles = new ArrayList<Zone>();
 
-Entrepot entrepot = new Entrepot(zones, positions);
+Entrepot entrepot = new Entrepot(zones, positions, cibles);
 
-Controleur controleur = new Controleur(entrepot);
+controleur = new Controleur(entrepot);
 
 for (int i = 0 ; i < 5 ; i++) {
     for (int j = 0 ; j < 6 ; j++) {
@@ -117,7 +118,7 @@ for (int i = 0 ; i < 5 ; i++) {
         }
         else if (i == 3 && j == 4) {
             zone = new Zone(entrepot, position, true, false);
-            entrepot.setCible(zone);
+            cibles.add(zone);
         }
         else if (i == 2 && j == 1) {
             zone = new Zone(entrepot, position, false, false);
@@ -141,17 +142,21 @@ for (int i = 0 ; i < 5 ; i++) {
         
     }
 }
-System.out.println(entrepot);
-controleur.commande(Direction.DROITE);
-System.out.println(entrepot);
-controleur.commande(Direction.DROITE);
-System.out.println(entrepot);
-controleur.commande(Direction.HAUT);
-System.out.println(entrepot);
-controleur.commande(Direction.DROITE);
-System.out.println(entrepot);
-controleur.commande(Direction.BAS);
-System.out.println(entrepot);
+entrepot.setTaille(5, 6);
+
+//        System.out.println(entrepot);
+//        controleur.action(Direction.DROITE);
+//        System.out.println(entrepot);
+//        controleur.action(Direction.DROITE);
+//        System.out.println(entrepot);
+//        controleur.action(Direction.HAUT);
+//        System.out.println(entrepot);
+//        controleur.action(Direction.DROITE);
+//        System.out.println(entrepot);
+//        controleur.action(Direction.BAS);
+//        System.out.println(entrepot);
+
+SwingUtilities.invokeLater(new TestSokoban());
 ]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
@@ -160,6 +165,128 @@ System.out.println(entrepot);
                 <DEPENDENCIES>
                   <LINK relation="Model">
                     <FOREIGNID name="JavaCode" mc="Infrastructure.NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="run" mc="Standard.Operation" uid="16769db8-269b-4cac-b393-8aa06ea28065"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[run]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="fc842e98-27fb-40bb-b407-ab16bf983d5a"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[@Override]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaAnnotation" mc="Infrastructure.NoteType" uid="000c0b48-0000-3aa1-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="2afcc893-53c0-49af-9f19-6a34afb71f85"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[new FenetreSokoban(controleur);]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="Infrastructure.NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedEnd">
+        <OBJECT>
+          <ID name="controleur" mc="Standard.AssociationEnd" uid="d2e159c2-d117-459a-b793-361bbb0250e5"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[controleur]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Controleur" mc="Standard.Class" uid="50c7a659-361e-4f90-a5c2-f4f6e5de0888"/>
+            </LINK>
+            <COMP relation="Opposite">
+              <OBJECT>
+                <ID name="" mc="Standard.AssociationEnd" uid="3065dc39-9edc-498d-b931-94ac05c145c8"/>
+                <ATTRIBUTES>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
+                  <ATT name="IsChangeable">true</ATT>
+                  <ATT name="Changeable">AccesNone</ATT>
+                  <ATT name="IsDerived">false</ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Opposite">
+                    <COMPID name="controleur" mc="Standard.AssociationEnd" uid="d2e159c2-d117-459a-b793-361bbb0250e5"/>
+                  </COMP>
+                  <COMP relation="Association">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Association" uid="e365ad77-87fa-4dec-8fe7-984cc3d15a9b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Association">
+              <COMPID name="" mc="Standard.Association" uid="e365ad77-87fa-4dec-8fe7-984cc3d15a9b"/>
+            </COMP>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="7a4bb40c-1cbc-4c34-b5d3-7075cce01a79"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="JavaNoInitValue" mc="Infrastructure.TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -182,10 +309,47 @@ System.out.println(entrepot);
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="Standard.ElementImport" uid="629b1c41-59fb-436a-9b8d-540a945fc5df"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="FenetreSokoban" mc="Standard.Class" uid="4b4981c7-acf6-4cdc-8073-0e4d1cd86ef0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="JavaClass" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
       </LINK>
       <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="28b9b544-984e-45ce-8c8d-d171e4ab5853"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="628ef882-f545-49cd-b0b4-c7adbee432bd"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Runnable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="JavaImplements" mc="Infrastructure.TagType" uid="003800a8-0000-0156-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
         <OBJECT>
           <ID name="" mc="Infrastructure.TaggedValue" uid="4e9e38aa-f5ea-4caa-9a93-7f6f6e9c69f3"/>
           <ATTRIBUTES>
@@ -198,6 +362,14 @@ System.out.println(entrepot);
                 <ID name="" mc="Infrastructure.TagParameter" uid="41116247-b743-42b6-a2ae-361fc3602db1"/>
                 <ATTRIBUTES>
                   <ATT name="Value"><![CDATA[java.util.ArrayList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="e4cc492c-d510-43eb-ab8e-d8d1ececc058"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[javax.swing.SwingUtilities]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>

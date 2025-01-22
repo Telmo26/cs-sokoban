@@ -71,6 +71,96 @@
         <COMPID name="Zone" mc="Standard.Class" uid="7cc074be-3948-4b69-8875-83f29c2eb68c"/>
         <COMPID name="Entrepot" mc="Standard.Class" uid="49c1f2a7-bd06-42ac-997b-b7d158e6e432"/>
         <COMPID name="Position" mc="Standard.Class" uid="02a5e82d-f825-4b4d-a6fa-1d34cc81f39b"/>
+        <OBJECT>
+          <ID name="ContenuZone" mc="Standard.Enumeration" uid="2bd9e6a9-ad13-4ef6-9bf7-b09d402bb595"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">true</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[ContenuZone]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="ZONE_VIDE" mc="Standard.EnumerationLiteral" uid="6fb0c165-4f50-43d8-9aba-97628e80e66d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[ZONE_VIDE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="MUR" mc="Standard.EnumerationLiteral" uid="9abef4e2-08b2-4547-a9f2-cd1a69770bee"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[MUR]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="CAISSE" mc="Standard.EnumerationLiteral" uid="cfba62fb-0671-44d4-9625-166c2163b848"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[CAISSE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="CAISSE_SUR_CIBLE" mc="Standard.EnumerationLiteral" uid="411ec7d0-2b55-42ae-91bf-300e906fe1a2"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[CAISSE_SUR_CIBLE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="CIBLE" mc="Standard.EnumerationLiteral" uid="88292637-0df3-4cce-90ac-5f810ef229b5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[CIBLE]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="GARDIEN" mc="Standard.EnumerationLiteral" uid="6e5ada6b-76ff-4433-8aa2-9c3f1583e062"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[GARDIEN]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="JavaEnumeration" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0262-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="f249a80e-7026-4428-a92a-605d866435fe"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Énumération des contenus des cases pour l'IHM du jeu Sokoban
+
+Cette énumération figure dans le paquetage entity pour pouvoir
+etre utilisée par les classes de ce paquetage sans introduire
+une dépendance vers les paquetages control ou boundary.
+
+@author Dominique Marcadet
+@version 1.2]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="Javadoc" mc="Infrastructure.NoteType" uid="000c11e0-0000-5bb9-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>

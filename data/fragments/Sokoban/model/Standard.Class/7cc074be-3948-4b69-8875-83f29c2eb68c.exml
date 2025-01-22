@@ -839,7 +839,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="6f8d4448-be2b-4ed4-adff-1fd8d7ada3f0"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="903f6b02-40b3-4de9-b3d2-c47409d56aec"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -877,7 +877,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="8cd506c4-4f37-4f4e-beb1-646db7796efb"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="07605b38-09a6-41c1-8a0b-f2dfaa2bf648"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -951,7 +951,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
                   </COMP>
                   <COMP relation="Tag">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="499e0ec3-c0c5-49f4-a129-ae1fd6162bb0"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="a677d8d7-31c3-4794-a231-490b7b862a5e"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -1083,7 +1083,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="2b8ab6cc-318e-4f99-9792-71d9546adce1"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="d3cf37be-1f5d-4103-a12a-d9769fbc289f"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -1103,7 +1103,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="48e93933-90a1-4f02-9b83-7e3c6c1749a1"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="946900c2-c9c3-4af9-963c-7fef70ead676"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1175,7 +1175,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
                   </COMP>
                   <COMP relation="Tag">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="4e865bb9-c07c-4ebd-adcd-9b0e8b5d8f5b"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="8bbeaebc-b589-4dc6-9fe7-3038f73b29f4"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -1195,7 +1195,7 @@ Zone zoneVoisine = this.entrepot.getZone(positionVoisin);
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="0edf0b39-9262-4707-a0a3-ea3c111d242d"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="e405ee4f-e72a-4f31-9f30-71aada97ff80"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
