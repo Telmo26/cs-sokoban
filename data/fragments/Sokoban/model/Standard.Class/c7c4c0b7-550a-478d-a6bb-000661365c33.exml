@@ -289,7 +289,7 @@ for( int l = 0; l < controleur.getNbLignes(); ++l ) {
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="b02ef7bf-4c3b-49c7-ab4d-8281e07abc70"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="f3cf3de5-e4b5-4536-a4d7-64f5c07d737a"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -366,7 +366,7 @@ for( int l = 0; l < controleur.getNbLignes(); ++l ) {
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="49482204-4830-4e31-ad63-b9e0138ef50f"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="e91d950d-a517-4649-b12d-52ef971abd24"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

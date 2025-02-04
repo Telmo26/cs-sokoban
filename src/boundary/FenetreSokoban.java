@@ -84,11 +84,12 @@ public class FenetreSokoban extends JFrame implements KeyListener {
         }
         if( direction == null ) return;
         controleur.action( direction );
+        repaint();
         if( controleur.jeuTerminé() ) {
             JOptionPane.showMessageDialog( this, "Vous avez gagné !" );
             System.exit( 0 );
         }
-        repaint();
+        
     }
 
     @objid ("3257f4df-03da-4f17-b561-0c32c0d293c3")

@@ -161,7 +161,7 @@ this.entrepot = entrepot;
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="f276c34c-b7ef-4d55-af42-f544531bf22b"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="a44bf8ba-e600-4c2f-8971-c76dce3c2747"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -236,7 +236,7 @@ this.entrepot = entrepot;
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="766a9a7f-b61b-4c59-988c-702f0c9d1729"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="b6f576e7-5524-4a21-a11a-2bdf95692a84"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

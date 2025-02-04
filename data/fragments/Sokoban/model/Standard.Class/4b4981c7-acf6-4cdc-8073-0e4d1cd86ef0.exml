@@ -278,11 +278,11 @@ case KeyEvent.VK_RIGHT:
 }
 if( direction == null ) return;
 controleur.action( direction );
+repaint();
 if( controleur.jeuTerminé() ) {
     JOptionPane.showMessageDialog( this, "Vous avez gagné !" );
     System.exit( 0 );
 }
-repaint();
 ]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
                   <ATT name="Name"></ATT>
@@ -604,7 +604,7 @@ repaint();
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="efa7d9f2-325a-49fc-8b06-ae287a3a7b36"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="52ddeb9e-18cc-4483-a105-15bdea2d4671"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

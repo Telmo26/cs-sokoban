@@ -54,7 +54,7 @@
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="2416bd2b-a93a-4334-9f45-610aebf277cd"/>
+                      <ID name="" mc="Infrastructure.Note" uid="34c5ad72-cf78-4953-a5c0-f27a6baf1fce"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[direction de la progression demandée par le joueur]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -276,7 +276,7 @@ this.entrepot = entrepot;
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="bb096685-931e-4d81-8d48-81a57cfb917d"/>
+                      <ID name="" mc="Infrastructure.Note" uid="8c3fe6b4-cc22-4a62-ad67-520b7bba4a50"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[true si le jeu est terminé, false sinon]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -380,7 +380,7 @@ this.entrepot = entrepot;
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="7615ded6-ea74-4985-b06d-ed9eacee8469"/>
+                      <ID name="" mc="Infrastructure.Note" uid="fe15fdcf-191c-4c0e-a0e8-0d0565ddc8e0"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[le nombre de lignes de l'entrepot]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -499,7 +499,7 @@ lignes de l'entrepot courant.]]></ATT>
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="a83ab6c2-62ab-4ce7-a7e6-6d8d72f70fa1"/>
+                      <ID name="" mc="Infrastructure.Note" uid="4df15341-5be1-4155-8730-f359fa5d5608"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[le nombre de colonnes de l'entrepot]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -618,7 +618,7 @@ colonnes de l'entrepot courant.]]></ATT>
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="b9521c91-d800-4347-855e-181bb4a7afa1"/>
+                      <ID name="" mc="Infrastructure.Note" uid="123b0a87-2685-432e-9528-074eb0b17848"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[numéro de la ligne de la case (de 0 à getNbLines() - 1)]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -656,7 +656,7 @@ colonnes de l'entrepot courant.]]></ATT>
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="728e3277-4004-4d60-91e4-669e142999c1"/>
+                      <ID name="" mc="Infrastructure.Note" uid="d857cc88-0e14-43bf-8da0-6fe7220a0ff2"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[numéro de la colonne de la case (de 0 à getNbColumns() - 1)]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -698,7 +698,7 @@ colonnes de l'entrepot courant.]]></ATT>
                   </LINK>
                   <COMP relation="Descriptor">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.Note" uid="98b6fd8d-ad9a-4050-a855-c49b5a28726d"/>
+                      <ID name="" mc="Infrastructure.Note" uid="0e054938-5f4d-4ab4-8dae-f53d0387acaf"/>
                       <ATTRIBUTES>
                         <ATT name="Content"><![CDATA[le type de la case]]></ATT>
                         <ATT name="MimeType"></ATT>
@@ -846,7 +846,7 @@ d'une case de l'entrepot courant.]]></ATT>
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="861548b9-b06c-44eb-9eb2-ad57bcefd3b1"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="d7c67bab-a11a-4ab3-ac41-1bb7eef7cd6e"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -921,7 +921,7 @@ d'une case de l'entrepot courant.]]></ATT>
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="dac8ffe8-a7d0-4b90-848f-6891095a62bd"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="eccc8b6e-fdcd-40e6-8b25-3b2c873566ff"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

@@ -915,7 +915,7 @@ this.largeur = largeur;
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="5c7da01e-6baa-45a8-b8a6-382951c4ba20"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="1af91229-0a62-46db-987d-79c2adef10d9"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -953,7 +953,7 @@ this.largeur = largeur;
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="82057a51-370d-4710-a769-2774555b793d"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="a4817b17-244b-4746-b795-0ee451891227"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1055,7 +1055,7 @@ this.largeur = largeur;
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="c88e681d-5a18-4ae9-8ee7-31f7bdfeb5a3"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="2fcfebc3-9205-4110-9282-135681e0e3ae"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

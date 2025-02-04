@@ -643,7 +643,7 @@ this.ligne = ligne;
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="16f06d22-d74a-4d61-9ede-e3063be6df6f"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="826cc33f-5298-49a9-b509-870e8b6159c1"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -681,7 +681,7 @@ this.ligne = ligne;
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="5269c5f4-80e5-471f-8202-33a9c23f393e"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="1a951947-4e79-4a31-a07a-a5243c878c5d"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -777,7 +777,7 @@ this.ligne = ligne;
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TaggedValue" uid="51d35817-5f4b-498f-983b-205f375204f3"/>
+                      <ID name="" mc="Infrastructure.TaggedValue" uid="4d586928-4469-46f8-ab12-e6cc902282c1"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -797,7 +797,7 @@ this.ligne = ligne;
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="9aa01c0b-0b65-4e45-8e63-b80c66286499"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="a0bc6dbc-02e0-42d9-8c50-432b2dfbf5c0"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

@@ -144,18 +144,6 @@ for (int i = 0 ; i < 5 ; i++) {
 }
 entrepot.setTaille(5, 6);
 
-//        System.out.println(entrepot);
-//        controleur.action(Direction.DROITE);
-//        System.out.println(entrepot);
-//        controleur.action(Direction.DROITE);
-//        System.out.println(entrepot);
-//        controleur.action(Direction.HAUT);
-//        System.out.println(entrepot);
-//        controleur.action(Direction.DROITE);
-//        System.out.println(entrepot);
-//        controleur.action(Direction.BAS);
-//        System.out.println(entrepot);
-
 SwingUtilities.invokeLater(new TestSokoban());
 ]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -279,7 +267,7 @@ SwingUtilities.invokeLater(new TestSokoban());
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="7a4bb40c-1cbc-4c34-b5d3-7075cce01a79"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="240da547-1c7f-4bdd-9b13-588a7191ff28"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>

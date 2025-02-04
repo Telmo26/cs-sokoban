@@ -37,7 +37,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="commande" mc="Standard.Operation" uid="0c2325af-a4e2-4e26-90a6-a5f13c58e9ca"/>
+                      <ID name="action" mc="Standard.Operation" uid="0c2325af-a4e2-4e26-90a6-a5f13c58e9ca"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -73,7 +73,7 @@
         <OBJECT>
           <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="79261a09-f47d-4695-b6be-0c261945c3cd"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">515</ATT>
+            <ATT name="LineNumber">516</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -128,7 +128,7 @@
         <OBJECT>
           <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="255a1f48-1940-4aa8-8cf4-d038e6b8a785"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">525</ATT>
+            <ATT name="LineNumber">518</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
@@ -297,7 +297,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="getPlaceVoisine" mc="Standard.Operation" uid="b7954af0-69a2-4827-8ba6-5370387c9906"/>
+                      <ID name="getZoneVoisine" mc="Standard.Operation" uid="b7954af0-69a2-4827-8ba6-5370387c9906"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -557,7 +557,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="getPlace" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
+                      <ID name="getZone" mc="Standard.Operation" uid="6b9eea45-38b7-46e3-8282-4a6ccd2e8a8b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>

@@ -28,7 +28,7 @@ public class TestSokoban implements Runnable {
                 if (i == 0 || j == 0 || i == 4 || j == 5) {
                     zone = new Zone(entrepot, position, false, true);
                 }
-                else if (i == 3 && j == 4) {
+                else if ((i == 3 && j == 4) || (i == 1 && j == 1)) {
                     zone = new Zone(entrepot, position, true, false);
                     cibles.add(zone);
                 }
@@ -38,7 +38,7 @@ public class TestSokoban implements Runnable {
                     zone.setMobile(gardien);
                     controleur.setGardien(gardien);
                 }
-                else if (i == 2 && j == 3) {
+                else if ((i == 2 && j == 3) || (i == 1 && j == 2)) {
                     zone = new Zone(entrepot, position, false, false);
                     Caisse caisse = new Caisse(zone);
                     zone.setMobile(caisse);
@@ -55,18 +55,6 @@ public class TestSokoban implements Runnable {
             }
         }
         entrepot.setTaille(5, 6);
-        
-        //        System.out.println(entrepot);
-        //        controleur.action(Direction.DROITE);
-        //        System.out.println(entrepot);
-        //        controleur.action(Direction.DROITE);
-        //        System.out.println(entrepot);
-        //        controleur.action(Direction.HAUT);
-        //        System.out.println(entrepot);
-        //        controleur.action(Direction.DROITE);
-        //        System.out.println(entrepot);
-        //        controleur.action(Direction.BAS);
-        //        System.out.println(entrepot);
         
         SwingUtilities.invokeLater(new TestSokoban());
     }
